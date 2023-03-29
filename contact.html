@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Retro Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <body>
+    <div class="background">
+        
+    <header>
+        <div class="logo">
+            <a href="main.html">Retro Hotel</a>
+          </div>
+      <nav>
+        <ul>
+            <li><a href="rooms.html">Pokoje</a></li>
+            <li><a href="meld.html">Rezerwacje</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a style="text-align: right;" href="login.html">Logowanie</a></li>
+        </ul>
+      </nav>
+    </header>
+    <style>
+
+		body {
+			background-image: url(wallpaper.jpg);
+			background-size: cover;
+		}
+        nav {
+    background-color: #c18412; /* Set background color */
+    padding: 10px; /* Add padding */
+
+  }
+  a {
+    text-decoration: none;
+    color: #b6b836;
+ }
+  .logo {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    color: #b6b836;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgba(237, 83, 0, 0.8);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(112, 153, 15, 0.8);
+    }
+  }
+
+  
+  nav ul {
+	top: 20px;
+    list-style-type: none; /* Remove bullets from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for horizontal alignment */
+  }
+  
+  nav li {
+    margin-right: 20px; /* Add spacing between each list item */
+  }
+  
+  nav a {
+    font-family: Arial,  sans-serif;
+    color: #fff; /* Set text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    text-transform: uppercase; /* Convert text to uppercase */
+  }
+  
+  nav a:hover {
+    color: rgb(4, 104, 13); /* Set text color on hover */
+  }
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Courier New';
+    color: whitesmoke;
+
+}
+
+
+
+
+section#contact {
+	background: transparent;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.a {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+	border: 1px solid orange;
+	background-color: transparent;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 18px;
+}
+
+input[type="submit"] {
+	background: purple;
+	color: white;
+	font-size: 18px;
+	padding: 10px 20px;
+	border: orange 1px solid;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.contact-info p {
+	font-size: 18px;
+	margin: 0;
+	}
+    </style>
+
+    <section id="contact">
+		<h2>Skontaktuj się z nami</h2>
+		<form class="a" action="" method="post">
+			<label for="name">Imię:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Wiadomość:</label>
+			<textarea id="message" name="message" rows="6" required></textarea>
+
+			<input type="submit" value="Send">
+			
+		</form>
+		<div class="contact-info">
+			<p><i class="fa fa-map-marker"></i> 123 Teb Edukacja</p>
+			<p><i class="fa fa-phone"></i> +48 111 111 111 </p>
+			<p><i class="fa fa-envelope"></i> zur.help@zur.com</p>
+		</div>
+	</section>
+
+	
+            
+
+    
+  </body>
+</html>

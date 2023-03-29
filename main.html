@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Retro Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="background">
+        
+    <header>
+        <div class="logo">
+            <a href="main.html">Retro Hotel</a>
+          </div>
+      <nav>
+        <ul>
+          <li><a href="rooms.html">Pokoje</a></li>
+          <li><a href="meld.html">Rezerwacje</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a style="text-align: right;" href="login.html">Logowanie</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1></h1>
+
+    <div class="slideshow-container">
+      <img class="mySlides" src="room1.jpg">
+      <img class="mySlides" src="room2.jpg">
+      <img class="mySlides" src="room3.jpg">
+      <img class="mySlides" src="room4.jpg">
+      <img class="mySlides" src="room5.jpg">
+      <img class="mySlides" src="room6.jpg">
+      <img class="mySlides" src="room7.jpg">
+  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+  
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+  
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+  
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+  
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000, slideIndex += 1);
+    }
+  </script>
+            
+
+    
+  </body>
+</html>

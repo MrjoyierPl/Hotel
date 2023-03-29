@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Panel Logowania</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Panel Pracownika</h1>
+      <form>
+        <label for="username">Login:</label>
+        <input type="text" id="username" name="username" requirgb(180, 53, 180)>
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" requirgb(180, 53, 180)>
+        <button type="submit">Zaloguj</button>
+        <button class="back" type="button"  onclick="window.location.url('main.html')">Wróć</button>
+      </form>
+      
+    </div>
+    <style>
+      body {
+        color: rgb(180, 53, 180);
+        background-size:cover;
+        background-image: url("wallpaper.jpg");
+        font-family: Arial, sans-serif;
+      }
+      
+      .container {
+        border-radius: 10px;
+        width: 400px;
+        margin: 100px auto;
+        background-color: #000000;
+        border: rgb(180, 53, 180) 1px solid;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      h1 {
+        text-align: center;
+        color: rgb(176, 47, 176);
+        margin-bottom: 30px;
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        border: 1px;
+        background-color: transparent;
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      button[type="submit"] {
+        background-color: rgb(180, 53, 180);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button  [type="submit"]:hover {
+        background-color: rgb(180, 53, 180);
+      }
+      .back {
+        border: 1px;
+        background-color: rgb(180, 53, 180);
+        color: #fff;
+        margin-left: 4px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+    </style>
+  </body>
+</html>

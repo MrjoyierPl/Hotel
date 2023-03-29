@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Retro Hotel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+    <div class="background">
+        
+    <header>
+        <div class="logo">
+            <a href="main.html">Retro Hotel</a>
+          </div>
+
+      <nav>
+        <ul>
+          <li><a href="rooms.html">Pokoje</a></li>
+          <li><a href="meld.html">Rezerwacje</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a style="text-align: right;" href="login.html">Logowanie</a></li>
+        </ul>
+      </nav>
+    </header>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+  
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+  
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  
+      .room-card {
+        width: 250px;
+        background-color: rgb(107, 22, 107);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+  
+      .room-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+      }
+  
+      .room-image {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: rgb(107, 22, 107);
+      }
+  
+      .room-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .room-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+  
+      .room-description {
+        font-size: 0.8rem;
+        margin-top: 10px;
+      }
+  
+      .room-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #ff6f00;
+      }
+  
+      .selected {
+        background-color: rgb(107, 22, 107);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        cursor: default;
+      }
+  
+      .selected .room-image {
+        border: 5px solid #fff;
+      }
+    </style>
+    <body>
+      <h1>Wybór pokoju</h1>
+
+      <div class="container">
+        <div class="room-card">
+          <div class="room-image">
+            <img src="room1.jpg">
+          </div>
+          <div class="room-title">Pokój Standardowy</div>
+          <div class="room-description">Standardowy pokój z widokiem na morze</div>
+          <div class="room-price"> 200zł za noc</div>
+        </div>
+    
+        <div class="room-card">
+          <div class="room-image">
+            <a href="room1.html"> <img src="room2.jpg"></a>
+          </div>
+          <div class="room-title">Pokój luksus</div>
+          <div class="room-description">Luksusowy pokój z podwójnym lub pojedyńczmym łóżkiem.</div>
+          <div class="room-price">400zł za noc</div>
+        </div>
+    
+        <div class="room-card">
+          <div class="room-image">
+            <img src="room3.jpg">
+          </div>
+          <div class="room-title">Pokój Premium</div>
+          <div class="room-description">Pokój klasy premium, najwyższa klasa luksusu</div>
+          <div class="room-price">600zł za noc</div>
+        </div>
+    </body>
+    </html>
+   
+    

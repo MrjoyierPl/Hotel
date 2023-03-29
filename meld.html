@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Booking Form</title>
+ 
+  </head>
+
+  <body>
+    <form>
+      <fieldset disabled>
+        <legend>Dane Osobowe</legend>
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" requirgb(171, 25, 171)>
+
+        <label for="email">Nazwisko:</label>
+        <input type="email" id="email" name="email" requirgb(171, 25, 171)>
+
+        <label for="phone">Numer tel:</label>
+        <input type="text" id="phone" name="phone" requirgb(171, 25, 171)>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informacje o pobycie</legend>
+        <label for="checkin">Zameldowanie: <label>
+        <input type="date" id="checkin" name="checkin" requirgb(171, 25, 171)>
+
+        <label for="checkout">Wymeldowanie: </label>
+        <input type="date" id="checkout" name="checkout" requirgb(171, 25, 171)>
+
+        <label for="room-type">Klasa pokoju<label>
+        <select id="room-type" name="room-type" requirgb(171, 25, 171)>
+          <option value="">Wybierz rodzaj pokoju</option>
+          <option value="standard">standard</option>
+          <option value="deluxe">Pokoj Luksus</option>
+          <option value="suite">Pokój premium</option>
+        </select>
+
+        <label for="comments">Specialne życzenia i prośby:</label>
+        <textarea id="comments" name="comments"></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+      <button type="button" onclick="window.open('main.html')">Wróć</button>
+    </form>
+    <style>
+      /* Form styles */
+      * {
+        resize: none;
+      }
+      body {
+        background-image: url("wallpaper.jpg");
+        background-size: cover;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      select,
+      textarea {
+        color:rgb(171, 25, 171);
+        background-color: transparent;
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid rgb(171, 25, 171);
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      label {
+        color:rgb(171, 25, 171);
+      }
+      input[type="submit"], [type="button"] {
+
+        background-color: rgb(159, 27, 159);
+        color: whitesmoke;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"], [type="button"] :hover {
+        background-color: rgb(171, 25, 171);
+        
+      }
+      /* Fieldset styles */
+      fieldset {
+        border: none;
+        margin: 0;
+        resize: none;
+        padding: 0;
+      }
+      legend {
+        color: rgb(171, 25, 171);
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    </style>
+  </body>
+</html>
